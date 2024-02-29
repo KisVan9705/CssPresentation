@@ -234,3 +234,12 @@ header{
     text-align: end;
     font-size: 20px;
 }
+
+@media screen and (max-width:900px) {
+    .Menu{
+        /* display: none; */
+        visibility: collapse;
+        width: 45%;
+    }
+    
+}
