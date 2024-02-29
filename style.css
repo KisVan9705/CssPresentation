@@ -13,7 +13,7 @@ header{
 }
 
 .Header1{
-    background-color: rgb(166, 11, 11);
+    background-color: #b1040e;
     height: 50px;
     display: flex;
     justify-content: flex-start;
@@ -130,7 +130,8 @@ header{
     grid-template-columns: auto auto auto auto;
     gap: 20px;
     /* border: 1px solid black; */
-    margin: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .gridNews {
@@ -188,8 +189,8 @@ header{
 }
 
 .MoreNews label{
-    border: 1px solid rgb(166, 11, 11);
-    background-color: rgb(166, 11, 11);
+    border: 1px solid #b1040e;
+    background-color: #b1040e;
     height: 60px;
     width: 25%;
     text-align: center;
@@ -208,7 +209,7 @@ header{
     padding: 0px;
 }
 .footerList h3{
-    margin: 0px;
+    margin-bottom: 5px;
     color: rgb(88, 4, 4);
 }
 
@@ -222,7 +223,7 @@ header{
 }
 .FooterEnd{
     display: flex;
-    background-color: rgb(166, 11, 11);
+    background-color: #b1040e;
     height: 150px;
     margin-top: 15px;
 }
