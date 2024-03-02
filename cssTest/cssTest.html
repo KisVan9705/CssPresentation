@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #img1{
+            border-radius: 10px;
+            height: 500px;
+        }
+        #roundImg{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: white;
+            display: flex;
+            z-index: 3;
+            align-self: center;
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            padding: 2%;
+            /* border:1px solid black ; */
+        }
+
+        .main-container{
+            display: flex;
+            width: 80%;
+            /* border: 1px grey solid; */
+            gap: 3%;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 5%;
+            
+        }
+
+        .Img{
+            height: 500px;
+            display: inline-flex;
+            /* border: 1px white solid; */
+            border-radius: 10px;
+            object-fit: cover;
+            /* position:sticky */
+        }
+        .sideImg{
+            position: absolute;
+            background-color: white;
+            border-end-end-radius:  5px;
+        }
+        .LoremText1{
+            display: flex;
+            flex-direction: row;
+            /* border: 1px solid black; */
+            height: auto;
+            margin: 2%;
+            gap: 5%;
+            text-align: justify;
+            padding: auto;
+        }
+
+        /* .LoremText2{
+            align-sel ;
+        } */
+        .LoremText3{
+            border: 1px solid blue;
+            align-self: self-end;
+            text-align: justify;
+            z-index: 1;
+            height: 30%;
+            position: relative;
+        }
+
+        .Text-container{
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        @media screen and (max-width: 500px) {
+            .main-container{
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            /* border: 1px grey solid; */
+            gap: 3%;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 5%;
+            
+        }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="Img">
+            <img id="img1" src="./AbejaJPG.jpg" alt="Flower">
+            <div class="sideImg">Side Image ->&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        </div>
+        <div class="Text-container">
+            <div class="LoremText1">
+                <div class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem earum expedita nam quo. Ratione alias sit cumque ducimus vitae, beatae magni ab, velit obcaecati ea, hic nihil illum debitis deserunt.</div> 
+                <div class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem earum expedita nam quo. Ratione alias sit cumque ducimus vitae, beatae magni ab, velit obcaecati ea, hic nihil illum debitis deserunt.</div> 
+            </div>
+            <div class="LoremText3">
+                
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem earum expedita nam quo. Ratione alias sit cumque ducimus vitae, beatae magni ab, velit obcaecati ea, hic nihil illum debitis deserunt.
+
+                <img id="roundImg" src="./AbejaJPG.jpg" alt="Flower">
+
+            </div> 
+        </div>
+       
+    </div>
+
+    <script>
+
+
+
+const ask = (question, yes, no) => {
+    if(confirm(question)) yes();
+    else no();
+}
+
+ask("Do you agree?",() => alert("you agreed."),() => alert("you cancelled."))       
+    </script>
+</body>
+</html>
